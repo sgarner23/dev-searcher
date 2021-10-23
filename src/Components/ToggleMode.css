@@ -1,0 +1,20 @@
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  width: 78px;
+}
+.toggle-icon {
+  width: 20px;
+  height: 25.79px;
+}
+
+.dark-text {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  line-height: 100%;
+  letter-spacing: 2.5px;
+  color: #697c9a;
+  align-self: center;
+  padding-bottom: 13px;
+}

@@ -1,13 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-import "./reset.css";
+
 import Title from "./Components/Title";
+import SearchBar from "./Components/SearchBar";
 
 function App() {
   return (
     <div className="App">
       <Title />
-      Hello how are you
+      <SearchBar />
     </div>
   );
 }

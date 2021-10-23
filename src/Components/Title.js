@@ -1,9 +1,12 @@
 import React from "react";
+import ToggleMode from "./ToggleMode";
+import "./Title.css";
 
 const Title = () => {
   return (
-    <div>
-      <p>test</p>
+    <div className="title-container">
+      <p className="title-text">devfinder</p>
+      <ToggleMode />
     </div>
   );
 };

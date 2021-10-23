@@ -1,0 +1,87 @@
+.search-bar-container {
+  height: 69px;
+  background-color: #fefefe;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  margin-bottom: 22px;
+}
+
+.search-left {
+  display: flex;
+  width: 500px;
+  padding-left: 22px;
+}
+
+.search-text-container {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.user-input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: #222731;
+  font-size: 18px;
+  font-weight: normal;
+  caret-color: #0079ff;
+}
+
+.user-input:focus {
+  border: none;
+  outline: none;
+}
+
+.user-input::placeholder {
+  color: #4b6a9b;
+  font-family: Space Mono;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+
+  /* Search GitHub userna */
+
+  /* identical to box height, or 139% */
+
+  color: #4b6a9b;
+
+  /* Search GitHub userna */
+}
+
+.search-btn {
+  color: #fefefe;
+
+  background-color: #0079ff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  height: 50px;
+  align-self: center;
+  letter-spacing: 0.5px;
+  margin-right: 20px;
+}
+
+img {
+  height: 24px;
+  width: 24px;
+  align-self: center;
+}
+
+.error-message {
+  visibility: hidden;
+  margin: auto 0;
+  font-size: 15px;
+  width: auto;
+  position: absolute;
+  top: 23px;
+  right: 147px;
+  color: red;
+}
