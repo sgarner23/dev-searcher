@@ -1,6 +1,6 @@
 .search-bar-container {
   height: 69px;
-  background-color: #fefefe;
+  /* background-color: #fefefe; */
   width: 100%;
   display: flex;
   justify-content: space-between;
