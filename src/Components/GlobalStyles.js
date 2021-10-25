@@ -11,7 +11,9 @@ export const GlobalStyles = createGlobalStyle`
    background-color: ${({ theme }) => theme.inputBackground}
  }
 
-  p {
-    color: ${({ theme }) => theme.red}
-  }
+  
   `;
+
+// //p {
+//   color: ${({ theme }) => theme.red}
+// }

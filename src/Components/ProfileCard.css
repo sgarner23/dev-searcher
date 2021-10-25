@@ -1,8 +1,101 @@
+.profile-card {
+  background-color: #fefefe;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  height: 419px;
+  display: flex;
+}
+
+.title-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.git-title {
+  color: #2b3442;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.date {
+  color: #697c9a;
+}
+
+.handle {
+  color: #0079ff;
+  padding-bottom: 15px;
+}
+
+.bio {
+  font-size: 15px;
+  color: #4b6a9b;
+  padding-bottom: 15px;
+}
+
+.stat-title {
+  color: #4b6a9b;
+  font-size: 13px;
+}
+
+.numbers {
+  color: #2b3442;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 92px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: #f6f8ff;
+  height: 85px;
+  width: 480px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-container {
+  display: flex;
+  width: 200px;
+  padding: 10px;
+}
+.link-text {
+  padding: 0 10px;
+  color: #4b6a9b;
+  text-decoration: none;
+}
+
+.left-side-card {
+  margin-right: 46px;
+}
+
+img {
+  height: 16px;
+  width: auto;
+}
+
 .profile-image {
   background-image: url("https://avatars.githubusercontent.com/u/583231?v=4");
-  height: 117px;
-  width: 117px;
+  height: 115px;
+  width: 115px;
   background-size: contain;
   border-radius: 50%;
   background-repeat: no-repeat;
+}
+
+.not-available {
+  color: #a5b4cc;
+}
+
+.filter-gray {
+  filter: brightness(0%) saturate(100%) invert(77%) sepia(3%) saturate(1997%)
+    hue-rotate(178deg) brightness(92%) contrast(93%);
 }

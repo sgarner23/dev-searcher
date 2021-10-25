@@ -1,6 +1,9 @@
 import React from "react";
 import "./ProfileCard.css";
 import location from "../Assets/location.svg";
+import twitter from "../Assets/twitter.svg";
+import website from "../Assets/website.svg";
+import company from "../Assets/company.svg";
 
 const ProfileCard = () => {
   return (
@@ -17,8 +20,7 @@ const ProfileCard = () => {
         <p className="handle">@octocat</p>
         <p className="bio">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
-          tempore fugiat sapiente porro beatae accusantium illum dicta numquam
-          rerum amet sint cum.
+          tempore fugiat sapiente porro.
         </p>
         <div className="stats">
           <div>
@@ -35,25 +37,25 @@ const ProfileCard = () => {
           </div>
         </div>
         <div className="links">
-          <div className="location">
+          <div className="link-container location">
             <img className="location-img" src={location} alt="" />
             <p className="link-text">San Francisco</p>
           </div>
-          <div className="twitter">
-            <img src="../Assets/twitter.svg" alt="" />
-            <p>Not Available</p>
+          <div className="link-container twitter">
+            <img src={twitter} alt="" className="filter-gray" />
+            <p className="link-text not-available">Not Available</p>
           </div>
         </div>
         <div className="links">
-          <div className="website-link">
-            <img src="../Assets/website.svg" alt="" />
-            <a className="website-url" href="#">
+          <div className="link-container website-link">
+            <img src={website} alt="" />
+            <a className="link-text website-url" href="#">
               https://github.blog
             </a>
           </div>
-          <div className="work">
-            <img src="../Assets/company.svg" alt="" />
-            <p>@github</p>
+          <div className="link-container work">
+            <img src={company} alt="" />
+            <p className="link-text">@github</p>
           </div>
         </div>
       </div>

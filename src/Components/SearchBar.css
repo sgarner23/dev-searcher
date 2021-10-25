@@ -67,6 +67,11 @@
   align-self: center;
   letter-spacing: 0.5px;
   margin-right: 20px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #61abff;
 }
 
 img {
