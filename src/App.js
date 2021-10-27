@@ -20,7 +20,7 @@ function App() {
       <GlobalStyles />
 
       <div className="App">
-        <Title themeToggler={themeToggler} />
+        <Title themeToggler={themeToggler} theme={theme} />
         <SearchBar />
         <ProfileCard />
       </div>

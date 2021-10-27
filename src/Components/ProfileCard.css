@@ -1,8 +1,8 @@
 .profile-card {
-  background-color: #fefefe;
+  /* background-color: #fefefe; */
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  /* box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567); */
   height: 419px;
   display: flex;
 }
@@ -13,13 +13,8 @@
 }
 
 .git-title {
-  color: #2b3442;
   font-weight: bold;
   font-size: 26px;
-}
-
-.date {
-  color: #697c9a;
 }
 
 .handle {
@@ -52,7 +47,6 @@
   padding-top: 15px;
   margin-bottom: 15px;
   border-radius: 10px;
-  background-color: #f6f8ff;
   height: 85px;
   width: 480px;
 }
@@ -84,8 +78,8 @@ img {
 
 .profile-image {
   background-image: url("https://avatars.githubusercontent.com/u/583231?v=4");
-  height: 115px;
-  width: 115px;
+  height: 118px;
+  width: 116px;
   background-size: contain;
   border-radius: 50%;
   background-repeat: no-repeat;

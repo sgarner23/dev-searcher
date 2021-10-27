@@ -14,32 +14,32 @@ const ProfileCard = () => {
 
       <div className="right-side-card">
         <div className="title-date">
-          <p className="git-title">The Octocat</p>
+          <p className="git-title profile-text">The Octocat</p>
           <p className="date">Joined 25 Jan 2011</p>
         </div>
         <p className="handle">@octocat</p>
-        <p className="bio">
+        <p className="bio profile-text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
           tempore fugiat sapiente porro.
         </p>
         <div className="stats">
           <div>
-            <p className="stat-title">Repos</p>
-            <p className="numbers">8</p>
+            <p className="stat-title profile-text">Repos</p>
+            <p className="numbers profile-text">8</p>
           </div>
           <div>
-            <p className="stat-title">Followers</p>
-            <p className="numbers">3938</p>
+            <p className="stat-title profile-text">Followers</p>
+            <p className="numbers profile-text">3938</p>
           </div>
           <div>
-            <p className="stat-title">Following</p>
-            <p className="numbers">9</p>
+            <p className="stat-title profile-text">Following</p>
+            <p className="numbers profile-text">9</p>
           </div>
         </div>
         <div className="links">
           <div className="link-container location">
-            <img className="location-img" src={location} alt="" />
-            <p className="link-text">San Francisco</p>
+            <img className="location-img filter" src={location} alt="" />
+            <p className="link-text profile-text">San Francisco</p>
           </div>
           <div className="link-container twitter">
             <img src={twitter} alt="" className="filter-gray" />
@@ -48,14 +48,14 @@ const ProfileCard = () => {
         </div>
         <div className="links">
           <div className="link-container website-link">
-            <img src={website} alt="" />
-            <a className="link-text website-url" href="#">
+            <img className="filter" src={website} alt="" />
+            <a className="link-text website-url profile-text" href="#">
               https://github.blog
             </a>
           </div>
           <div className="link-container work">
-            <img src={company} alt="" />
-            <p className="link-text">@github</p>
+            <img className="filter" src={company} alt="" />
+            <p className="link-text profile-text">@github</p>
           </div>
         </div>
       </div>

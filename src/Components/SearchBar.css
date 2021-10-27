@@ -7,7 +7,6 @@
   padding: 5px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   margin-bottom: 22px;
 }
 
@@ -26,7 +25,6 @@
   height: 100%;
   width: 100%;
   border: none;
-  color: #222731;
   font-size: 18px;
   font-weight: normal;
   caret-color: #0079ff;
@@ -38,7 +36,6 @@
 }
 
 .user-input::placeholder {
-  color: #4b6a9b;
   font-family: Space Mono;
   font-size: 18px;
   line-height: 25px;
@@ -49,8 +46,6 @@
   /* Search GitHub userna */
 
   /* identical to box height, or 139% */
-
-  color: #4b6a9b;
 
   /* Search GitHub userna */
 }
