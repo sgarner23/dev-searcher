@@ -4,12 +4,13 @@ import location from "../Assets/location.svg";
 import twitter from "../Assets/twitter.svg";
 import website from "../Assets/website.svg";
 import company from "../Assets/company.svg";
+import { useState } from "react";
 
-const ProfileCard = () => {
+const ProfileCard = ({ data }) => {
   return (
     <div className="profile-card">
       <div className="left-side-card">
-        <div className="profile-image"></div>
+        <img src={data.avatarPic} className="profile-image"></img>
       </div>
 
       <div className="right-side-card">

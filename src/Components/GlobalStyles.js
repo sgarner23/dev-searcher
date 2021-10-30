@@ -19,23 +19,18 @@ export const GlobalStyles = createGlobalStyle`
 
 
  .search-bar-container {
-   background-color: ${({ theme }) => theme.background}
+   background-color: ${({ theme }) => theme.background};
+   box-shadow: ${({ theme }) => theme.boxShadow};
  }
- .search-bar-container {
-  box-shadow: ${({ theme }) => theme.boxShadow}
- }
+ 
 
  .profile-card{
   background-color: ${({ theme }) => theme.background}
  }
 
  .user-input {
-   
-   background-color: ${({ theme }) => theme.background}
- }
-
- .user-input {
-   color: ${({ theme }) => theme.userInputColor}
+   background-color: ${({ theme }) => theme.background};
+   color: ${({ theme }) => theme.userInputColor};
  }
  
  .user-input::placeholder {
@@ -67,7 +62,3 @@ export const GlobalStyles = createGlobalStyle`
 
   
   `;
-
-// //p {
-//   color: ${({ theme }) => theme.red}
-// }

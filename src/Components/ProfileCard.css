@@ -77,7 +77,6 @@ img {
 }
 
 .profile-image {
-  background-image: url("https://avatars.githubusercontent.com/u/583231?v=4");
   height: 118px;
   width: 116px;
   background-size: contain;
