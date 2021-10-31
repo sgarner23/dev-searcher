@@ -3,13 +3,17 @@ import search from "../Assets/search.svg";
 import "./SearchBar.css";
 import { useState } from "react";
 
-const SearchBar = ({ getUser }) => {
+const SearchBar = ({ getUser, isError, setIsError }) => {
   const [userInput, setUserInput] = useState("");
 
   function beamDataUp() {
-    console.log(userInput);
     getUser(userInput);
     setUserInput("");
+  }
+
+  function updateInput(e) {
+    setUserInput(e.target.value);
+    setIsError(false);
   }
 
   return (
@@ -20,12 +24,12 @@ const SearchBar = ({ getUser }) => {
           <input
             type="text"
             value={userInput}
-            onChange={(e) => setUserInput(e.target.value)}
+            onChange={(e) => updateInput(e)}
             placeholder="Search GitHub username..."
             className="user-input"
           />
         </div>
-        <p className="error-message">No results</p>
+        {isError && <p className="error-message">No results</p>}
       </div>
       <button className="search-btn" onClick={beamDataUp}>
         Search

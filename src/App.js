@@ -31,12 +31,14 @@ function App() {
     twitter: null,
     company: "",
   });
+  const [isError, setIsError] = useState(false);
 
   function formatDate(dateProperty) {
     let dateMiliSeconds = Date.parse(dateProperty);
     let formattedDate = new Date(dateMiliSeconds).toDateString();
 
     let dateArr = formattedDate.split(" ");
+
     const newDateArr = [dateArr[2], dateArr[1], dateArr[3]];
 
     return newDateArr.join(" ");
@@ -61,8 +63,12 @@ function App() {
   }
 
   async function getUser(userInput) {
-    const res = await axios.get(BASE_URL + `${userInput}`);
-    updateData(res.data);
+    try {
+      const res = await axios.get(BASE_URL + `${userInput}`);
+      updateData(res.data);
+    } catch (error) {
+      setIsError(true);
+    }
   }
 
   useEffect(() => {
@@ -75,7 +81,12 @@ function App() {
 
       <div className="App">
         <Title themeToggler={themeToggler} theme={theme} />
-        <SearchBar getUser={getUser} />
+        <SearchBar
+          getUser={getUser}
+          data={data}
+          isError={isError}
+          setIsError={setIsError}
+        />
         <ProfileCard data={data} />
       </div>
     </ThemeProvider>

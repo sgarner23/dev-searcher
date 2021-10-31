@@ -42,17 +42,10 @@
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.5px;
-
-  /* Search GitHub userna */
-
-  /* identical to box height, or 139% */
-
-  /* Search GitHub userna */
 }
 
 .search-btn {
   color: #fefefe;
-
   background-color: #0079ff;
   font-size: 16px;
   border: none;
@@ -76,7 +69,6 @@ img {
 }
 
 .error-message {
-  visibility: hidden;
   margin: auto 0;
   font-size: 15px;
   width: auto;

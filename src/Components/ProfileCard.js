@@ -53,7 +53,7 @@ const ProfileCard = ({ data }) => {
         <div className="links">
           <div className="link-container website-link">
             <img className="filter" src={website} alt="" />
-            <a className="link-text website-url profile-text" href={data.blog}>
+            <a className="link-text website-url profile-text">
               {!data.blog ? "No website listed" : data.blog}
             </a>
           </div>
