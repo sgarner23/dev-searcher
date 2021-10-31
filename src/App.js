@@ -11,7 +11,7 @@ import { lightTheme, darkTheme } from "./Components/Themes";
 import axios from "axios";
 
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
@@ -58,7 +58,6 @@ function App() {
       twitter: resData.twitter_username,
       company: resData.company,
     });
-    console.log(data);
   }
 
   async function getUser(userInput) {

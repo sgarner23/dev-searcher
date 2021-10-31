@@ -15,48 +15,53 @@ const ProfileCard = ({ data }) => {
 
       <div className="right-side-card">
         <div className="title-date">
-          <p className="git-title profile-text">The Octocat</p>
-          <p className="date">Joined 25 Jan 2011</p>
+          <p className="git-title profile-text">{data.name}</p>
+          <p className="date">{`Joined ${data.dateJoined}`}</p>
         </div>
-        <p className="handle">@octocat</p>
+        <p className="handle">{data.handle}</p>
         <p className="bio profile-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
-          tempore fugiat sapiente porro.
+          {data.bio ? data.bio : `Profile has no bio.`}
         </p>
         <div className="stats">
           <div>
             <p className="stat-title profile-text">Repos</p>
-            <p className="numbers profile-text">8</p>
+            <p className="numbers profile-text">{data.repos}</p>
           </div>
           <div>
             <p className="stat-title profile-text">Followers</p>
-            <p className="numbers profile-text">3938</p>
+            <p className="numbers profile-text">{data.followers}</p>
           </div>
           <div>
             <p className="stat-title profile-text">Following</p>
-            <p className="numbers profile-text">9</p>
+            <p className="numbers profile-text">{data.following}</p>
           </div>
         </div>
         <div className="links">
           <div className="link-container location">
             <img className="location-img filter" src={location} alt="" />
-            <p className="link-text profile-text">San Francisco</p>
+            <p className="link-text profile-text">
+              {!data.location ? "No location listed" : data.location}
+            </p>
           </div>
           <div className="link-container twitter">
-            <img src={twitter} alt="" className="filter-gray" />
-            <p className="link-text not-available">Not Available</p>
+            <img src={twitter} alt="" className="filter" />
+            <p className="link-text profile-text">
+              {!data.twitter ? "No Twitter listed" : data.twitter}
+            </p>
           </div>
         </div>
         <div className="links">
           <div className="link-container website-link">
             <img className="filter" src={website} alt="" />
-            <a className="link-text website-url profile-text" href="#">
-              https://github.blog
+            <a className="link-text website-url profile-text" href={data.blog}>
+              {!data.blog ? "No website listed" : data.blog}
             </a>
           </div>
           <div className="link-container work">
             <img className="filter" src={company} alt="" />
-            <p className="link-text profile-text">@github</p>
+            <p className="link-text profile-text">
+              {!data.company ? "No company listed" : data.company}
+            </p>
           </div>
         </div>
       </div>

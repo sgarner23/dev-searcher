@@ -1,8 +1,6 @@
 .profile-card {
-  /* background-color: #fefefe; */
   padding: 40px;
   border-radius: 10px;
-  /* box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567); */
   height: 419px;
   display: flex;
 }
@@ -58,8 +56,9 @@
 
 .link-container {
   display: flex;
-  width: 200px;
+  width: 250px;
   padding: 10px;
+  overflow: hidden;
 }
 .link-text {
   padding: 0 10px;
@@ -86,9 +85,4 @@ img {
 
 .not-available {
   color: #a5b4cc;
-}
-
-.filter-gray {
-  filter: brightness(0%) saturate(100%) invert(77%) sepia(3%) saturate(1997%)
-    hue-rotate(178deg) brightness(92%) contrast(93%);
 }
