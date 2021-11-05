@@ -14,14 +14,18 @@ const ProfileCard = ({ data }) => {
       </div>
 
       <div className="right-side-card">
-        <div className="title-date">
-          <p className="git-title profile-text">{data.name}</p>
+        <div className="name-handle-date-container">
+          <div className="title-date">
+            <p className="git-title profile-text">{data.name}</p>
+            <p className="handle">{data.handle}</p>
+          </div>
           <p className="date">{`Joined ${data.dateJoined}`}</p>
         </div>
-        <p className="handle">{data.handle}</p>
-        <p className="bio profile-text">
-          {data.bio ? data.bio : `Profile has no bio.`}
-        </p>
+        <div className="bio-container">
+          <p className="bio profile-text">
+            {data.bio ? data.bio : `Profile has no bio.`}
+          </p>
+        </div>
         <div className="stats">
           <div>
             <p className="stat-title profile-text">Repos</p>
@@ -45,7 +49,7 @@ const ProfileCard = ({ data }) => {
           </div>
           <div className="link-container twitter">
             <img src={twitter} alt="" className="filter" />
-            <p className="link-text profile-text">
+            <p className="link-text profile-text twitter-text">
               {!data.twitter ? "No Twitter listed" : data.twitter}
             </p>
           </div>

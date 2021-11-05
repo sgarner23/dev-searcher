@@ -3,6 +3,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 730px;
+  width: 741.99px;
   padding-top: 137px;
+}
+
+/* MEDIA QUERIES TABLET */
+@media (max-width: 879px) {
+  .App {
+    width: 583px;
+  }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media (max-width: 621px) {
+  .App {
+    width: 327px;
+  }
 }

@@ -1,6 +1,5 @@
 .search-bar-container {
   height: 69px;
-  /* background-color: #fefefe; */
   width: 741.99px;
   display: flex;
   justify-content: space-between;
@@ -76,4 +75,49 @@ img {
   top: 23px;
   right: 147px;
   color: red;
+}
+
+/* MEDIA QUERIES TABLET  */
+
+@media (max-width: 879px) {
+  .search-bar-container {
+    width: 583px;
+  }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media (max-width: 621px) {
+  .search-bar-container {
+    width: 327px;
+  }
+
+  .search-btn {
+    height: 46px;
+    width: 84px;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 5px;
+  }
+
+  .search-left {
+    padding: 0px;
+    padding-left: 5px;
+  }
+
+  .user-input {
+    font-size: 13px;
+  }
+
+  .user-input::placeholder {
+    font-size: 12.5px;
+    letter-spacing: normal;
+  }
+
+  .error-message {
+    font-size: 12.5px;
+    position: absolute;
+    top: 26px;
+    right: 88px;
+  }
 }

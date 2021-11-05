@@ -6,11 +6,12 @@ import { useState } from "react";
 const SearchBar = ({ getUser, isError, setIsError }) => {
   const [userInput, setUserInput] = useState("");
 
+  //lifting the state up and resetting serach bar text
   function beamDataUp() {
     getUser(userInput);
-    setUserInput("");
   }
 
+  //setting the userinput to the current state variable and removing error message
   function updateInput(e) {
     setUserInput(e.target.value);
     setIsError(false);
@@ -19,7 +20,7 @@ const SearchBar = ({ getUser, isError, setIsError }) => {
   return (
     <div className="search-bar-container">
       <div className="search-left">
-        <img src={search} alt="" />
+        <img src={search} alt="" className="search-icon" />
         <div className="search-text-container">
           <input
             type="text"

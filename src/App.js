@@ -17,33 +17,19 @@ function App() {
   };
 
   const BASE_URL = `https://api.github.com/users/`;
-  const [data, setData] = useState({
-    avatarPic: "",
-    name: "",
-    handle: "",
-    dateJoined: "",
-    bio: null,
-    repos: 0,
-    followers: 0,
-    following: 0,
-    location: "",
-    blog: null,
-    twitter: null,
-    company: "",
-  });
+  const [data, setData] = useState({});
   const [isError, setIsError] = useState(false);
 
+  //Formats a date object to '04 Mar 2012' format
   function formatDate(dateProperty) {
     let dateMiliSeconds = Date.parse(dateProperty);
     let formattedDate = new Date(dateMiliSeconds).toDateString();
-
     let dateArr = formattedDate.split(" ");
-
     const newDateArr = [dateArr[2], dateArr[1], dateArr[3]];
-
     return newDateArr.join(" ");
   }
 
+  //Sets the current stat of all data from the API
   function updateData(resData) {
     setData({
       ...data,
@@ -62,6 +48,7 @@ function App() {
     });
   }
 
+  //function that makes a get request to the github api
   async function getUser(userInput) {
     try {
       const res = await axios.get(BASE_URL + `${userInput}`);
@@ -70,7 +57,6 @@ function App() {
       setIsError(true);
     }
   }
-
   useEffect(() => {
     getUser("octocat");
   }, []);
@@ -78,7 +64,6 @@ function App() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
-
       <div className="App">
         <Title themeToggler={themeToggler} theme={theme} />
         <SearchBar

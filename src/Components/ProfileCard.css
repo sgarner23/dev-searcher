@@ -1,12 +1,13 @@
 .profile-card {
   padding: 40px;
   border-radius: 10px;
-  height: 419px;
+  height: 444px;
   display: flex;
 }
 
 .title-date {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -20,10 +21,15 @@
   padding-bottom: 15px;
 }
 
+.bio-container {
+  height: 38px;
+  overflow: scroll;
+  margin: 15px 0;
+}
+
 .bio {
   font-size: 15px;
   color: #4b6a9b;
-  padding-bottom: 15px;
 }
 
 .stat-title {
@@ -52,6 +58,7 @@
 .links {
   display: flex;
   justify-content: space-between;
+  font-size: 15px;
 }
 
 .link-container {
@@ -64,6 +71,12 @@
   padding: 0 10px;
   color: #4b6a9b;
   text-decoration: none;
+}
+
+.twitter-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .left-side-card {
@@ -85,4 +98,89 @@ img {
 
 .not-available {
   color: #a5b4cc;
+}
+.name-handle-date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  padding-top: 9px;
+}
+
+/* MEDIA QUERIES TABLET  */
+
+@media (max-width: 879px) {
+  .profile-card {
+    height: 481px;
+    width: 583px;
+    display: block;
+    position: relative;
+  }
+
+  .name-handle-date-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+  }
+
+  .handle {
+    padding: 0;
+  }
+
+  .date {
+    padding: 0;
+  }
+
+  .stats {
+    width: 493px;
+  }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media (max-width: 621px) {
+  .profile-card {
+    width: 327px;
+    padding: 25px;
+  }
+
+  .git-title {
+    font-size: 16px;
+  }
+
+  .profile-image {
+    height: 70px;
+    width: 70px;
+  }
+
+  .profile-text {
+    font-size: 13px;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+
+  .name-handle-date-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 28px;
+    left: 120px;
+  }
+
+  .stats {
+    width: 279px;
+    height: 85px;
+    padding: 20px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
 }

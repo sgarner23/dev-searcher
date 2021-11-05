@@ -9,3 +9,19 @@
   font-weight: bold;
   font-size: 26px;
 }
+
+/* MEDIA QUERIES TABLET  */
+
+@media (max-width: 879px) {
+  .title-container {
+    width: 583px;
+  }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media (max-width: 621px) {
+  .title-container {
+    width: 327px;
+  }
+}
